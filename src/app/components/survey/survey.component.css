@@ -1,0 +1,64 @@
+.survey-container {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(to right,
+    rgba(150, 0, 0, 0.7) 10%,   /* Darker red */
+    rgba(153, 92, 22, 0.7) 20%, /* Darker orange */
+    rgba(153, 153, 0, 0.7) 30%, /* Darker yellow */
+    rgba(0, 60, 0, 0.7) 40%,    /* Darker green */
+    rgba(0, 0, 102, 0.7) 50%,   /* Darker blue */
+    rgba(38, 0, 72, 0.7) 60%,   /* Darker indigo */
+    rgba(92, 0, 153, 0.7) 70%, /* Darker violet */
+    rgba(150, 0, 0, 0.7) 80%,   /* Darker red */
+    rgba(153, 92, 22, 0.7) 90%, /* Darker orange */
+    rgba(153, 153, 0, 0.7) 100% /* Darker yellow */
+  );
+  background-size: 300% 100%; /* Increase background size for smooth animation */
+  animation: moveBackground 15s linear infinite; /* Apply animation */
+  height: 100vh;
+  color: white; /* Default text color */
+}
+
+@keyframes moveBackground {
+  0% {
+      background-position: 0% 0%;
+  }
+  100% {
+      background-position: 100% 0%;
+  }
+}
+
+.survey-container h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.survey-container p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.upload-label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  font-size: 1em;
+  padding: 10px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: darkcyan;
+}

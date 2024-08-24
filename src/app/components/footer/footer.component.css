@@ -1,0 +1,19 @@
+.footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
